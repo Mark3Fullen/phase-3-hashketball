@@ -127,3 +127,8 @@ def game_hash
 end
 
 # Write code here
+
+def num_points_scored
+  puts game_hash[:away][:players].map { |away_player| away_player[:points] }
+  puts game_hash[:home][:players].map { |home_player| home_player[:points] }  
+end  
